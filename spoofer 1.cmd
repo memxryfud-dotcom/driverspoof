@@ -1,9 +1,7 @@
 @echo off
 color C
-cd /D "%~dp0"
 
-:: Windows + D tuş kombinasyonunu simüle et
-powershell -command "(New-Object -ComObject shell.application).ToggleDesktop()"
+cd "%temp%"
 
 cls
 AMDContainer.exe /IVN %random%%random%%random%
