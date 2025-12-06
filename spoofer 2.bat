@@ -1,4 +1,4 @@
-cd /D "%temp%"
+cd "%temp%"
 reg add "HKCU\Software\Sysinternals" /v EulaAccepted /t REG_DWORD /d 1 /f
 timeout 2
 WerFault.exe -u -p 7968 -s 1096
@@ -52,4 +52,5 @@ timeout 2
 MAC.exe 
 ARP.exe
 exit
+
 
